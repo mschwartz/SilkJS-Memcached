@@ -32,6 +32,4 @@ realclean:
 
 $(DEP):
 	tar xzvfp $(DEP_ARCHIVE)
-	echo 'here'
 	cd $(DEP) && ./configure CFLAGS=-fPIC --disable-shared && make
-	echo 'there'
